@@ -30,6 +30,8 @@ cacheSolve <- function(x=matrix(), ...) {
 
   inv<-x$getmatrix()
   if(!is.null(inv)){
+    ## show menssage "getting cache data"
+    message("getting cached data")
     return(inv)
   }
   matrix<-x$get()
